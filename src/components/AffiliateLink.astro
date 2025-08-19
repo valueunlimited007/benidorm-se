@@ -1,0 +1,7 @@
+---
+export interface Props { href: string; merchant?: string; offer?: string; text: string; }
+const { href, merchant = '', offer = '', text } = Astro.props;
+---
+<a href={href} rel="sponsored nofollow noopener" target="_blank" data-merchant={merchant} data-offer={offer}>
+  {text}
+</a>
