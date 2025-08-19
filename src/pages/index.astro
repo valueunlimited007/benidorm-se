@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import AdsenseSlot from '../components/AdsenseSlot.astro';
+const canonical = 'https://benidorm.se/';
+---
+<Base title="Benidorm – komplett guide" description="Områden, stränder, boende, mat och nattliv." canonical={canonical}>
+  <section class="hero">
+    <h1>Benidorm – reseguide</h1>
+    <p>Bygg kluster: Var ska man bo, Saker att göra, Stränder, Restauranger, Transfer och Biluthyrning.</p>
+  </section>
+  <div class="grid">
+    <a class="card" href="/var-ska-man-bo/"><strong>Var ska man bo i Benidorm?</strong><br/>Områden, hotell & lägenheter.</a>
+    <a class="card" href="/saker-att-gora/"><strong>Saker att göra</strong><br/>Topplistan + temaguider (familj, budget, par).</a>
+    <a class="card" href="/strander/"><strong>Stränder</strong><br/>Faciliteter, parkering, barnvänligt, kartor.</a>
+    <a class="card" href="/restauranger/"><strong>Restauranger</strong><br/>Lokala favoriter och områdeslistor.</a>
+    <a class="card" href="/biluthyrning/"><strong>Biluthyrning</strong><br/>Jämförelse, tips, deposition & försäkring.</a>
+    <a class="card" href="/transfer-flygplats/"><strong>Transfer från flygplats</strong><br/>Buss, taxi, delad/privat transfer.</a>
+  </div>
+  <h2>Annons</h2>
+  <AdsenseSlot height="280px" />
+</Base>

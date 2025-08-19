@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import AffiliateLink from '../components/AffiliateLink.astro';
+const canonical = 'https://benidorm.se/transfer-flygplats/';
+---
+<Base title="Transfer från flygplats till Benidorm" description="Buss, taxi, delad/privat transfer och prisexempel." canonical={canonical}>
+  <h1>Transfer från flygplats till Benidorm</h1>
+  <p>Introtext (50–80 ord). Förklara vem sidan hjälper och vad som ingår. Lägg till innehållsförteckning.</p>
+  
+  <h2>Snabbval</h2>
+  <ul>
+    <li><a href="#topplistan">Topplistan</a></li>
+    <li><a href="#karta">Karta</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+
+  <h2 id="topplistan">Topplistan</h2>
+  <ol>
+    <li><strong>Plats/Aktör 1</strong> – 2–3 meningar. <AffiliateLink href="https://exempel-affiliate.com/?subid={CLICK_ID}" merchant="merchant" offer="offer" text="Se erbjudande" /></li>
+    <li><strong>Plats/Aktör 2</strong> – 2–3 meningar. <a href="#" rel="sponsored nofollow">Se erbjudande</a></li>
+    <li><strong>Plats/Aktör 3</strong> – 2–3 meningar.</li>
+  </ol>
+
+  <h2 id="karta">Karta</h2>
+  <p>Bädda in statisk karta-bild eller enkel interaktiv komponent senare.</p>
+
+  <h2 id="faq">Vanliga frågor</h2>
+  <details><summary>Fråga 1</summary><p>Svar.</p></details>
+  <details><summary>Fråga 2</summary><p>Svar.</p></details>
+</Base>
