@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://benidorm.se/sitemap-index.xml
